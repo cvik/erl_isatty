@@ -1,0 +1,7 @@
+#!/usr/bin/env escript
+
+main(_) ->
+    LibDir = code:lib_dir(),
+    GlobPath = filename:join([filename:dirname(LibDir), "erts-*", "include"]),
+    [ErtsDir|_] = filelib:wildcard(GlobPath),
+    io:format("~s~n", [ErtsDir]).

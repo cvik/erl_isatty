@@ -1,0 +1,8 @@
+{application, erl_isatty,
+ [{description, "Erlang NIF wrapper for unix 'int isatty(int)'"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [kernel, stdlib]},
+  {modules, []},
+  {env, []}
+ ]}.
